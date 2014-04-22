@@ -1,0 +1,7 @@
+<h1>This is a list of people!</h1>
+
+<% @people.each do |person| %>
+  <%= erb :person, { locals: {hello_world: person }} %>  
+<% end %>
+
+<a href="/create_person">Create person</a>

@@ -1,0 +1,10 @@
+<%= hello_world.id %>
+<%= hello_world.first_name %>
+<%= hello_world.last_name %>
+<a href="/edit_person/<%= hello_world.id %>">Edit</a>
+<br>
+<form action="/delete_person/<%= hello_world.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>
+<hr>

@@ -1,0 +1,33 @@
+<h1>Edit Person!</h1>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+<h2>SWEEETTTT</h2>
+
+<form action="/edit_person/<%= @person.id %>" method="post">
+  <!-- Don't forget this for any method other than post! -->
+  <input type="hidden" name="_method" value="put">
+  <label>First Name
+    <input type="text" name="person[first_name]" placeholder="<%= @person.first_name %>"> 
+  </label>
+  <br>
+  <label>Last Name
+    <input type="text" name="person[last_name]" placeholder="<%= @person.last_name %>"> 
+  </label>
+  <br>
+  <input type="submit" value="Edit Person">
+
+</form>
+<a href="/">Home</a>
+
+
